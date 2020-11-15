@@ -18,10 +18,11 @@ class ContactData extends Component {
 
   orderHandler = (event) => {
     event.preventDefault()
+    console.log(this.props)
     this.setState({ loading: true })
     const order = {
-      ingredients: this.state.ingredients,
-      price: this.state.totalPrice,
+      ingredients: this.props.ingredients,
+      price: this.props.price,
       customer: {
         name: 'Aman Singh',
         address: {
