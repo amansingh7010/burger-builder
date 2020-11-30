@@ -30,6 +30,7 @@ const input = (props) => {
           onChange={props.changed}
         />
       )
+      break
     case 'select':
       inputElement = (
         <select
